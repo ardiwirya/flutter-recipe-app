@@ -1,21 +1,56 @@
-# Resep Makanan
+# Resep Makanan — Flutter Recipe App
 
-**Resep Makanan** - Aplikasi resep untuk submission kelas [Belajar Membuat Aplikasi Flutter untuk Pemula](https://www.dicoding.com/academies/159). Rating submission Bintang 5⭐
+Aplikasi katalog resep makanan, dibuat sebagai submission kelas [Belajar Membuat Aplikasi Flutter untuk Pemula](https://www.dicoding.com/academies/159) — Dicoding. Submission ini mendapat rating **5/5**.
 
-## Sekilas
+## Preview
 
 ![Screencapture](/images/Screenshot.png)
 
-## Aplikasi Resep Makanan memiliki kriteria :
+## Tentang Aplikasi
 
-1. Terdapat penggunaan Stateless Widget. Misalnya untuk menampilkan Row atau Column.
-2. Terdapat penggunaan Stateful Widget. Misalnya untuk menerima input atau widget yang menampilkan status aplikasi.
-3. Memiliki minimal 2 (dua) halaman dan menerapkan Navigation.
-4. Tidak memiliki tampilan yang overflow (dapat menyesuaikan ukuran layar). Poin plus jika tampilan responsif pada perangkat mobile dan browser.
-5. Tema aplikasi yang dikirimkan bebas namun semakin detail dan lengkap aplikasi Anda maka nilai submission bisa lebih tinggi.
+Aplikasi ini menampilkan daftar resep makanan dan minuman yang dapat dicari dan difilter berdasarkan kategori, lengkap dengan rating dan fitur tandai favorit. Dibangun dengan Flutter, sehingga satu basis kode yang sama dapat berjalan di berbagai platform.
 
-## Scripts
+## Fitur
 
-1. Jalankan `flutter pub get` untuk menginstall dependencies
+- Daftar resep dengan gambar, kategori, dan rating
+- Pencarian resep berdasarkan nama
+- Filter berdasarkan kategori (Makanan Utama, Minuman, dsb.)
+- Tandai resep sebagai favorit
+- Navigasi antar halaman (daftar resep → detail resep)
+- Layout responsif, menyesuaikan ukuran layar mobile maupun desktop/web
 
-2. Jalankan aplikasi dengan `flutter run`
+## Platform yang Didukung
+
+Proyek ini dikonfigurasi untuk berjalan di enam target platform dari satu basis kode Dart yang sama:
+
+`Android` · `iOS` · `Web` · `Windows` · `macOS` · `Linux`
+
+## Aspek Teknis
+
+- Kombinasi **Stateless Widget** (untuk komponen statis seperti layout kartu resep) dan **Stateful Widget** (untuk state pencarian, filter, dan status favorit).
+- **Navigation** antar minimal dua halaman (daftar resep dan detail resep).
+- Layout dibangun agar tidak overflow dan tetap rapi di berbagai ukuran layar.
+
+## Menjalankan Proyek
+
+1. Install dependencies
+
+   ```bash
+   flutter pub get
+   ```
+
+2. Jalankan aplikasi (pilih device/emulator yang tersedia)
+
+   ```bash
+   flutter run
+   ```
+
+## Build untuk Web
+
+Karena proyek ini juga menyasar platform web, aplikasi dapat di-build menjadi aset statis dan di-deploy ke layanan hosting seperti Firebase Hosting, Netlify, atau Vercel:
+
+```bash
+flutter build web
+```
+
+Hasil build akan tersedia di folder `build/web`, siap diunggah ke layanan hosting pilihan.
