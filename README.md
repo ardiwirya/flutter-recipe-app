@@ -1,7 +1,7 @@
 # Resep Makanan — Flutter Recipe App
 
 Aplikasi katalog resep makanan, dibuat sebagai submission kelas [Belajar Membuat Aplikasi Flutter untuk Pemula](https://www.dicoding.com/academies/159) — Dicoding. Submission ini mendapat rating **5/5**.
-
+ 
 ## Preview
 
 ![Screencapture](/images/Screenshot.png)
